@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav"
 
 const Header = () => {
   return (
-    <header className='w-full border-b '>
+    <header className='w-full border-b'>
       <div className='wrapper flex items-center justify-between'>
         <Link href='/' className='w-36'>
           <Image
@@ -16,18 +16,18 @@ const Header = () => {
             alt='Evently logo'
           />
         </Link>
-          <nav className='hidden md:flex flex-1 justify-center'>
-            <NavItems />
-          </nav>
+        <nav className='hidden md:flex flex-1 justify-center'>
+          <NavItems />
+        </nav>
         <div className='flex w-32 justify-end gap-3'>
-              <MobileNav />
-            <Button
-              asChild
-              className='rounded-full bg-blue-700 hover:bg-blue-500'
-              size='lg'
-            >
-              <Link href='/sign-in'>Login</Link>
-            </Button>
+          <MobileNav />
+          <Button
+            asChild
+            className='rounded-full bg-blue-700 hover:bg-blue-500'
+            size='lg'
+          >
+            <Link href='/sign-in'>Login</Link>
+          </Button>
         </div>
       </div>
     </header>
